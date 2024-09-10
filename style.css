@@ -1,0 +1,213 @@
+* {
+margin: 0;
+ padding: 0;
+ list-style: none;
+ box-sizing: border-box;
+ font-family: 'Arial', sans-serif;
+ text-decoration: none;
+ color: #333;
+  }
+  
+  body {
+ background-color: #f4f4f9;
+  }
+  
+  p {
+ color: #666;
+  }
+  
+  .container {
+margin: 20px auto;
+padding: 2rem;
+  }
+  
+  /* Header */
+  header {
+ max-width: 1000px;
+  }
+  
+  header figure {
+ display: flex;
+ align-items: center;
+ column-gap: 16px;
+  }
+  
+  header figure img {
+    width: 6rem;
+    border-radius: 50%;
+  border: solid 2px #ccc;
+ padding: 0.5rem;
+  }
+  
+  header figure figcaption {
+ display: flex;
+ flex-direction: column;
+ row-gap: 8px;
+  }
+  
+  header figure figcaption span:first-child {
+ font-size: 2rem;
+ line-height: 2.5rem;
+ font-weight: bold;
+  }
+  
+  header figure figcaption span:last-child {
+ color: #999;
+ font-family: 'Courier New', monospace;
+  }
+  
+  header section {
+ margin-top: 1.5rem;
+  }
+  
+  header section h1 {
+ font-weight: bold;
+ margin-bottom: 1rem;
+ scroll-margin-top: 1.5rem;
+  }
+  
+  header section p {
+ text-align: left;
+  }
+  
+  /* Main */
+  main {
+ max-width: 1200px;
+ }
+  
+  main .main_title {
+ margin-bottom: 24px;
+ text-align: left;
+  }
+  
+  main .main_title span {
+ color: #444;
+  }
+  
+  main ul {
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ gap: 1.5rem;
+  }
+  
+  main ul li figure.card {
+ border: solid 2px #ddd;
+ border-radius: 8px;
+ padding: 1.5rem;
+  }
+  
+  main ul li figure.card .card_header {
+ display: flex;
+ column-gap: 16px;
+ align-items: flex-start;
+  }
+  
+  main ul li figure.card .card_header .card_image {
+ width: 100px;
+ height: 100px;
+ overflow: hidden;
+ border-radius: 50%;
+  }
+  
+  main ul li figure.card .card_header .card_image img {
+ margin-top: 0;
+  }
+  
+  main ul li figure.card .card_header .card_description {
+ font-weight: bold;
+ }
+  
+  main ul li figure.card .card_header .card_description {
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+  }
+  
+  main ul li figure.card .card_header .card_description span:last-child {
+ color: #888;
+ font-family: 'Courier New', monospace;
+  }
+  
+  main ul li figure.card .card_content {
+ display: flex;
+ flex-direction: column;
+ row-gap: 10px;
+ margin-top: 16px;
+  }
+  
+  /* Footer */
+  footer {
+ padding: 2rem 0;
+ background-color: #333;
+ color: #fff;
+  }
+  
+  footer section {
+ display: flex;
+ align-items: center;
+ column-gap: 0.5rem;
+ justify-content: center;
+  }
+  
+  footer section img:first-child {
+ width: 2.5rem;
+  }
+  
+  footer section img:last-child {
+ width: 2rem;
+  }
+  
+  footer p {
+ text-align: center;
+ font-size: 12px;
+  }
+  
+  
+  /* Responsive Design */
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+ /* Header */
+ header figure {
+ justify-content: flex-start;
+ }
+  
+ header figure img {
+ width: 8rem;
+ }
+ 
+ header figure figcaption span:first-child {
+ font-size: 2.5rem;
+ line-height: 2rem;
+ }
+  
+ header figure figcaption span:last-child {
+ font-size: 1rem;
+line-height: 1.5rem;
+ }
+  
+ /* Main */
+ main .main_title {
+ text-align: center;
+ }
+  
+ main ul {
+ grid-template-columns: repeat(2, 1fr);
+ }
+  
+ main ul li figure.card .card_header .card_description span:first-child {
+ font-size: 18px;
+ }
+  }
+  
+  /* Laptop */
+  @media screen and (min-width: 1024px) {
+ /* Header */
+ header figure img {
+ width: 10rem;
+ }
+  
+ /* Main */
+ main ul {
+ grid-template-columns: repeat(3, 1fr);
+ }
+  }
